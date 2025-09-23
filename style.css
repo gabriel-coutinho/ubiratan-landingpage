@@ -1,0 +1,264 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Paytone+One&family=Poppins:wght@400;500;600;700&display=swap');
+
+:root {
+    --font-titles: 'Paytone One', sans-serif;
+    --font-text: 'Poppins', sans-serif;
+    background-color: #f5f5f5;
+}
+
+.icons-material-primary {
+  font-family: 'Material Symbols Outlined';
+  font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 20;
+
+  font-size: 20px;
+  color: #3c435a;
+  width: 20px;          /* Define largura fixa */
+  height: 20px;         /* Define altura fixa */
+  line-height: 20px;    /* Alinha verticalmente */
+  display: inline-block;
+  overflow: hidden;     /* Garante que não ultrapasse o tamanho */
+  text-align: center;   /* Centraliza o conteúdo dentro do span */
+  vertical-align: middle;
+}
+
+body {
+    font-family: var(--font-text);
+    line-height: 1.6;
+    color: #333;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-titles);
+    font-weight: 400;
+    line-height: 1.2;
+}
+
+body {
+    line-height: 1.6;
+    color: #333;
+}
+
+.container {
+    width: 90%;
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 0px;
+}
+
+/* Header */
+header {
+    background-color: #d4d4d4;
+    /*background-color: #3c435a;*/
+    padding: 20px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    height: 66px;
+    width: auto;
+    transition: transform 0.3s ease;
+}
+
+.logo-link:hover .logo {
+    transform: scale(1.05);
+}
+
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-left: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+nav ul li:hover {
+    transform: translateY(-2px);
+}
+
+nav ul li a {
+    color: #3c435a;
+    /*color: #f5f5f5;*/
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #d4a74b;
+    cursor: pointer;
+}
+
+/* Init Section */
+.init {
+    padding: 150px 0 40px;
+}
+
+.init .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.init-content {
+    flex: 1;
+    padding-right: 40px;
+}
+
+.init-content h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #3c435a;
+}
+
+.init-content .subtitle {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    color: #7a7a7a;
+}
+
+.init-content .talktome-button {
+    display: inline-flex;
+    background-color: #3c435a;
+    color: #FFFFFF;
+    padding: 10px 20px;
+    border: none;
+    font-size: 1.4rem;
+    border-radius: 100px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.init-content .talktome-button:hover {
+    background-color: #d4a74b;
+}
+
+.init-image {
+    flex: 1;
+}
+
+.init-image img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.8);
+    filter: brightness(0.8);
+}
+
+/* How I Help Section TODO*/
+/* Services Section TODO */
+/* Zone Section TODO */
+/* About Me Section TODO */
+/* FAQ Section TODO */
+
+
+/* Footer */
+footer {
+    background-color: #d4d4d4;
+    color: #3c435a;
+}
+
+footer a {
+    color: inherit
+}
+
+footer a:hover {
+    color: #d4a74b;
+    cursor: pointer;
+}
+
+footer .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .contacts {
+    font-weight: 600;
+    padding-left: 32px;
+    display: flex;
+    flex-direction: column;
+}
+
+footer .contacts-list {
+    display: flex;
+    flex-direction: row;
+}
+
+footer .contact {
+    display: flex;
+    flex-direction: row;
+    padding-right: 16px;
+    text-decoration: none;
+}
+
+.icons-footer {
+    padding-right: 4px;
+}
+
+.footer-copy {
+    padding-top: 8px;
+    text-align: center;
+}
+
+/* Responsible screen */
+@media (max-width: 768px) {
+    /* Header section */
+    header {
+        padding: 0px;
+    }
+
+    header .container {
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    nav ul {
+        margin-top: 5px;
+    }
+
+    nav ul li {
+        margin-left: 8px;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .contact-menu{
+        display: none;
+    }
+
+    /* Init section */
+    .init .container {
+        flex-direction: column;
+    }
+
+    .init-content {
+        padding-right: 0;
+        margin-bottom: 40px;
+        text-align: center;
+    }
+
+    /* Footer section */
+    footer .contacts-list {
+        display: flex;
+        flex-direction: column;
+    }
+}

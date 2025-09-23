@@ -22,12 +22,12 @@
 
   font-size: 20px;
   color: #3c435a;
-  width: 20px;          /* Define largura fixa */
-  height: 20px;         /* Define altura fixa */
-  line-height: 20px;    /* Alinha verticalmente */
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
   display: inline-block;
-  overflow: hidden;     /* Garante que não ultrapasse o tamanho */
-  text-align: center;   /* Centraliza o conteúdo dentro do span */
+  overflow: hidden;
+  text-align: center;
   vertical-align: middle;
 }
 

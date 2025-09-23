@@ -109,6 +109,22 @@ nav ul li a:hover {
     cursor: pointer;
 }
 
+/* Commons to sections*/
+.section {
+    color: #3c435a;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.whiteBg {
+    background-color: #FFFFFF;
+}
+
+.section h2 {
+    margin-bottom: 40px;
+    font-size: 2.5rem;
+} 
+
 /* Init Section */
 .init {
     padding: 150px 0 40px;
@@ -137,7 +153,7 @@ nav ul li a:hover {
     color: #7a7a7a;
 }
 
-.init-content .talktome-button {
+.talktome-button {
     display: inline-flex;
     background-color: #3c435a;
     color: #FFFFFF;
@@ -149,7 +165,7 @@ nav ul li a:hover {
     transition: background-color 0.3s;
 }
 
-.init-content .talktome-button:hover {
+.talktome-button:hover {
     background-color: #d4a74b;
 }
 
@@ -164,7 +180,30 @@ nav ul li a:hover {
     filter: brightness(0.8);
 }
 
-/* How I Help Section TODO*/
+/* How I Help Section */
+
+.howihelp-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    padding-bottom: 40px;
+}
+
+.howihelp-card {
+    padding: 30px;
+    border-radius: 10px;
+    background-color: #f5f5f5;
+    transition: transform 0.3s;
+}
+
+.howihelp-card:hover {
+    transform: translateY(-10px);
+}
+
+.section-icon {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
 /* Services Section TODO */
 /* Zone Section TODO */
 /* About Me Section TODO */

@@ -123,7 +123,23 @@ nav ul li a:hover {
 .section h2 {
     margin-bottom: 40px;
     font-size: 2.5rem;
-} 
+}
+
+.talktome-button {
+    display: inline-flex;
+    background-color: #3c435a;
+    color: #FFFFFF;
+    padding: 10px 20px;
+    border: none;
+    font-size: 1.4rem;
+    border-radius: 100px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.talktome-button:hover {
+    background-color: #d4a74b;
+}
 
 /* Init Section */
 .init {
@@ -151,22 +167,6 @@ nav ul li a:hover {
     font-size: 1.2rem;
     margin-bottom: 30px;
     color: #7a7a7a;
-}
-
-.talktome-button {
-    display: inline-flex;
-    background-color: #3c435a;
-    color: #FFFFFF;
-    padding: 10px 20px;
-    border: none;
-    font-size: 1.4rem;
-    border-radius: 100px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-.talktome-button:hover {
-    background-color: #d4a74b;
 }
 
 .init-image {
@@ -200,12 +200,52 @@ nav ul li a:hover {
     transform: translateY(-10px);
 }
 
-.section-icon {
+.howihelp-icon {
     font-size: 2.5rem;
     margin-bottom: 20px;
 }
-/* Services Section TODO */
-/* Zone Section TODO */
+
+/* Services Section */
+
+.services h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #3c435a;
+}
+
+.services-grid {
+    display: flex;
+    gap: 30px;
+    padding-bottom: 40px;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.service-card {
+    background: #FFFFFF;
+    min-width: 262px;
+    padding: 40px 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+.service-card h3 {
+    color: #2c3e50;
+    margin-bottom: 15px;
+    font-size: 1.4rem;
+}
+
+.service-card p {
+    color: #7A7A7A;
+    line-height: 1.2;
+}
 /* About Me Section TODO */
 /* FAQ Section TODO */
 
@@ -293,6 +333,13 @@ footer .contact {
         padding-right: 0;
         margin-bottom: 40px;
         text-align: center;
+    }
+
+    /* Services section */
+    .services-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 30px;
     }
 
     /* Footer section */

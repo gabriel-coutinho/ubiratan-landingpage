@@ -247,10 +247,13 @@ nav ul li a:hover {
 .aboutme {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-right: 30px;
 }
 
 .aboutme-image img {
-    width: 70%;
+    width: 73%;
     border-radius: 10px;
     box-shadow: 0 5px 15px rgba(0,0,0,0.8);
 }
@@ -375,7 +378,8 @@ footer .contact {
     .aboutme {
         display: flex;
         flex-direction: column;
-        gap: 30px
+        gap: 30px;
+        margin-right: 0;
     }
 
     .aboutme-texts {

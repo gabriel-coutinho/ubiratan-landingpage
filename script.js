@@ -35,9 +35,16 @@ document.addEventListener('DOMContentLoaded', function() {
     // Activate initial sections
     document.querySelector('.init').style.opacity = '1';
     document.querySelector('.init').style.transform = 'translateY(0)';
-    document.querySelector('.howihelp').style.opacity = '1';
-    document.querySelector('.howihelp').style.transform = 'translateY(0)';
-    document.querySelector('.services').style.opacity = '1';
-    document.querySelector('.services').style.transform = 'translateY(0)';
-
+    document.querySelector('.section.white-bg').style.opacity = '1';
+    document.querySelector('.section.white-bg').style.transform = 'translateY(0)';
+    
+    // Accordeons with activations
+    const accordionHeaders = document.querySelectorAll('.accordion-header');
+    
+    accordionHeaders.forEach(header => {
+        header.addEventListener('click', function() {
+            const accordionItem = this.parentElement;
+            accordionItem.classList.toggle('active');
+        });
+    });
 });
